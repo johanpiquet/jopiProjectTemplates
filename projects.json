@@ -1,9 +1,20 @@
 {
-  "projects": [
+  "project": [
     {
-      "title": "Project 1",
-      "dir": "project1",
-      "code": "p1"
+      "title": "A minimal template",
+      "project": "minimal"
+    },
+    {
+      "title": "ReactJS + Tailwind",
+      "project": "reactjs_tailwind",
+
+      "options": [
+        {
+          "ask": "Use ShadCN?",
+          "option": "shadcn",
+          "project": "reactjs_tailwind_shadcn"
+        }
+      ]
     }
   ]
 }
