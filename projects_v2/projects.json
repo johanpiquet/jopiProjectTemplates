@@ -4,6 +4,9 @@
       "title": "A minimal template", "template": "minimal"
     },
     {
+      "title": "Test", "template": "test"
+    },
+    {
       "title": "ReactJS Server Side + Tailwind", "template": "reactServerSide_Tailwind",
       "hasInstaller": true,
 
