@@ -1,21 +1,11 @@
 {
   "projects": [
+    {"title": "A minimal template", "template": "minimal"},
     {
-      "title": "A minimal template",
-      "template": "minimal"
-    },
-    {
-      "title": "ReactJS + Tailwind",
-      "template": "reactjs_tailwind",
+      "title": "ReactJS + Tailwind", "template": "reactjs_tailwind",
 
       "options": [
-        {
-          "option": "shadcn",
-
-          "type": "ask",
-          "default": true,
-          "ask": "Use ShadCN?"
-        }
+        {"option": "shadcn", "type": "confirm", "title": "Use ShadCN?", "default": true}
       ]
     }
   ]
