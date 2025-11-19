@@ -1,0 +1,7 @@
+[serve.static]
+plugins = [
+    # Allow compiling Tailwind.
+    "bun-plugin-tailwind",
+    # Add jopi-rewrite requirements.
+    "jopi-rewrite/bun-server-static"
+]
