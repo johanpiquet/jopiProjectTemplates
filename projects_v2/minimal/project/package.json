@@ -7,8 +7,9 @@
   "scripts": {
     "build": "rm -rf ./dist; npx tsc",
     "tsc": "npx tsc",
-    "start": "JOPI_LOG=0 JOPI_DEV=0 JOPI_DEV_UI=0 bunx jopib src/index.ts",
-    "start-node": "JOPI_LOG=0 JOPI_DEV=0 JOPI_DEV_UI=0 npx jopin dist/index.js"
+    "start": "JOPI_DEV=0 JOPI_DEV_UI=0 bunx jopib src/index.ts",
+    "startHMR": "JOPI_DEV=0 JOPI_DEV_UI=1 bunx jopib src/index.ts",
+    "start:node": "JOPI_LOG=0 JOPI_DEV=0 JOPI_DEV_UI=0 npx jopin dist/index.js"
   },
 
   "devDependencies": {
