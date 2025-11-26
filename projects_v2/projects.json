@@ -1,6 +1,7 @@
 {
   "projects": [
     {"title": "A minimal template", "template": "minimal"},
-    {"title": "ShadCN based template", "template": "shadcn"}
+    {"title": "ShadCN based template", "template": "shadcn"},
+    {"title": "Stress test 1000 pages", "template": "stressTest"}
   ]
 }
