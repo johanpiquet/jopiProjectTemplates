@@ -15,15 +15,15 @@ This directory is part of Jopi. It allows sharing items between modules.
     |     |- CompB              < A second component to add
     |        |- index.tsx       < This component implementation
     |
-    |- my.event.name            < For sharing events
-    |  |- eventName             < The name of the event
+    |- events                   < For sharing events
+    |  |- my.event.name             < The name of the event
     |     |- listenerNameA      < Each listener has a name which only role
     |     |- listenerNameB          is to know the calling order (sorted ASC)
-    |        |- index.ts        < Contains the function to call. 
+    |        |- index.tsx        < Contains the function to call. 
     |
     |- schemes                  < For data description schemes
     |  |- schemeName            < The name of the scheme.
-    |     |- index.ts           < Define the scheme.
+    |     |- index.tsx           < Define the scheme.
 ```
 
 As you can see, there is four things the `@alias` expose.

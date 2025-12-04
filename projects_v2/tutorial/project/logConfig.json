@@ -1,7 +1,7 @@
 {
   "config": {
     "jopi.server": "warn",
-    "jopi.server.request": "info",
+    "jopi.server.request": "warn",
     "jopi.bundler": "warn"
   }
 }

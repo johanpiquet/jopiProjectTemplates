@@ -10,22 +10,22 @@
     }
   },
   {
-    "login": "simple-user@mymail.com",
+    "login": "writer@mymail.com",
     "password": "mypassword",
     "userInfos": {
-      "id": "simple-user",
-      "fullName": "Simple User",
-      "email":  "simple-user@mymail.com"
+      "id": "writer",
+      "fullName": "writer",
+      "email":  "writer@mymail.com",
+      "roles": ["writer"]
     }
   },
   {
-    "login": "the-writer@mymail.com",
+    "login": "norole@mymail.com",
     "password": "mypassword",
     "userInfos": {
-      "id": "the-writer",
-      "fullName": "Simple User",
-      "email":  "the-writer@mymail.com",
-      "roles": ["writer"]
+      "id": "norole",
+      "fullName": "norole",
+      "email":  "norole@mymail.com"
     }
   }
 ]

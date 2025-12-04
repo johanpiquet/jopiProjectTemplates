@@ -1,7 +1,7 @@
 import {JopiEasyWebSite} from "jopijs";
 
 // > This file 'serverInit.ts' is automatically called
-//   when the server start, after processing the content
+//   when the server starts, after processing the content
 //   of the file `src/index.ts`.
 //
 export default async function(webSite: JopiEasyWebSite) {
@@ -13,7 +13,7 @@ export default async function(webSite: JopiEasyWebSite) {
     // It means that most of the content of `src/index.ts`
     // can be put inside our modules `serverInit.ts` file.
     //
-    // Doing this can be a good thing, for example if you are
+    // Doing this can be a good thing, for example, if you are
     // creating a module implementing a custom authentification protocol.
-    // Since enabling this module allows to automatically enable this protocol.
+    // Since enabling this module allows automatically enabling this protocol.
 }

@@ -38,7 +38,7 @@ export function NavFavorites() {
           <SidebarMenuItem key={item.title}>
             <SidebarMenuButton asChild>
               <RouterLink to={item.url!}>
-                <item.icon />
+                  {item.icon && <item.icon /> }
                 <span>{item.title}</span>
               </RouterLink>
             </SidebarMenuButton>

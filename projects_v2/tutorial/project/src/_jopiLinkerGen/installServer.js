@@ -9,7 +9,7 @@ import modServerInit1 from "../mod_learning/serverInit.ts";
 import modServerInit2 from "../mod_userAuth/serverInit.ts";
 
 export default async function(registry, onWebSiteCreated) {
-    registry.events.addProvider("test.hello", async () => { const R = await import("@/events/test.hello"); return R.list; });
+    registry.events.addProvider("card.product.added", async () => { const R = await import("@/events/card.product.added"); return R.list; });
     await modServerInit1(registry);
     await modServerInit2(registry);
     onWebSiteCreated((webSite) => declareRoutes(webSite));

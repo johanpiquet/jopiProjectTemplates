@@ -18,10 +18,10 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/mod_shadcn/components/ui/sidebar"
-import {type MenuItem} from "jopijs/uikit";
+import {type ReactMenuItem} from "jopijs/uikit";
 import React from "react";
 
-export function NavMain({onClick}: { onClick?: (subItem: MenuItem, event: React.MouseEvent<HTMLAnchorElement>)=>void}) {
+export function NavMain({onClick}: { onClick?: (subItem: ReactMenuItem, event: React.MouseEvent<HTMLAnchorElement>)=>void}) {
   const items = useMenu(MenuName.LEFT_MENU);
 
   return (

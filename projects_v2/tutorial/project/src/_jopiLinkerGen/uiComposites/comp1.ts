@@ -5,10 +5,12 @@ See file ARCHITECTURE.md at the root of the project for instructions.
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
 import I1 from "../../mod_learning/@alias/uiComposites/comp1/a1/index.tsx";
 import I2 from "../../mod_learning/@alias/uiComposites/comp1/a2/index.tsx";
+import I3 from "../../mod_overriding/@alias/uiComposites/comp1/a4/index.tsx";
 
 export default function p() {
     return _jsxs(_Fragment, { children: [
         _jsx(I1, {}), 
-        _jsx(I2, {})
+        _jsx(I2, {}), 
+        _jsx(I3, {})
     ]});
 };

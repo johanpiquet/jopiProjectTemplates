@@ -5,7 +5,7 @@ import { NavFavorites } from "./nav-favorites.tsx"
 import { NavUser } from "./nav-user.tsx"
 import { TeamSwitcher } from "./team-switcher.tsx"
 import {Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail,} from "@/mod_shadcn/components/ui/sidebar"
-import {type MenuItem, MenuName, useRouterNavigate, useUserInfos} from "jopijs/uikit";
+import {type ReactMenuItem, MenuName, useRouterNavigate, useUserInfos} from "jopijs/uikit";
 import {LogIn} from "lucide-react";
 import * as jk_events from "jopi-toolkit/jk_events";
 
@@ -18,7 +18,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         navigate(`/login?returnUrl=${encodeURIComponent(currentUrl)}`);
     };
 
-    const handleLinkClick = (menuItem: MenuItem, menuName: string) => {
+    const handleLinkClick = (menuItem: ReactMenuItem, menuName: string) => {
         jk_events.sendEvent("app.menu.click", {menuName, menuItem});
     };
 

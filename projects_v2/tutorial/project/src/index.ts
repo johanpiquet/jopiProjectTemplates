@@ -9,17 +9,17 @@ jopiApp.startApp(
     // `import.meta` is a javascript feature allowing use to know
     // what is the full-path of this source code file.
     //
-    // The javascript engine update `import.meta` for each file
+    // The JavaScript engine updates `import.meta` for each file
     // with information on this file.
     //
     import.meta,
 
     // jopiEasy is the entry point of a special API named "Intent API".
-    // It's like a menu / sub-menu. Doing this allows reducing the complexity.
+    // It's like a menu / submenu. Doing this allows reducing the complexity.
     jopiEasy => {
             // Create the website.
             // The url can be directly set here.
-            // But best practice is to use env variable (process.env).
+            // But the best practice is to use the env variable (process.env).
             //
             // It's defined at the '.env' file at the project root with these values:
             // JOPI_WEBSITE_URL=http://localhost:3000

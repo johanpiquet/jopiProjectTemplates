@@ -7,7 +7,7 @@ See file ARCHITECTURE.md at the root of the project for instructions.
 import modUiInit1 from "../mod_learning/uiInit.tsx";
 
 export default function(registry) {
-    registry.events.addProvider("test.hello", async () => { const R = await import("@/events/test.hello"); return R.list; });
+    registry.events.addProvider("card.product.added", async () => { const R = await import("@/events/card.product.added"); return R.list; });
     modUiInit1(registry);
     registry.finalize();
     registry.events.sendEvent("app.init.ui", {myModule: registry});

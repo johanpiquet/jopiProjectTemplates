@@ -10,7 +10,7 @@ import {Frame, GalleryVerticalEnd, SquareTerminal} from "lucide-react";
 
 export default function(myModule: UiKitModule) {
     // addUiInitializer adds a function called when all the modules are loaded.
-    // "EventPriority.high" allows controlling the call order and be called before default order.
+    // "EventPriority.high" allows controlling the call order and being called before the default order.
     //
     myModule.addUiInitializer(EventPriority.high, () => {
         //console.log('Module A - UI initialized (Default)');
@@ -54,8 +54,8 @@ export default function(myModule: UiKitModule) {
     // Declare a sub-menu
     //
     menuManager.addMenuBuilder(MenuName.LEFT_MENU, (leftMenu) => {
-        leftMenu.set(["withSecondLevel", "Sub Menu 1"], {url: "/mainMenu/subMenu1"});
-        leftMenu.set(["withSecondLevel", "Sub Menu 2"], {url: "/mainMenu/subMenu2"});
+        leftMenu.set(["withSecondLevel", "Sub Menu 1"], {url: "/not-implemented-1"});
+        leftMenu.set(["withSecondLevel", "Sub Menu 2"], {url: "/not-implemented-2"});
     });
 
     // Menu override allows changing the title and the order of a menu entry.
@@ -65,6 +65,5 @@ export default function(myModule: UiKitModule) {
     // When no title is defined, the key is used as a title.
     // Here we want a more explicit title.
     // Also, we want to use an icon.
-    menu.override(["withSecondLevel"], {title: "With 2 levels", icon: "square"});
-
+    menu.override(["withSecondLevel"], {title: "Menu with 2 levels", icon: "square"});
 }

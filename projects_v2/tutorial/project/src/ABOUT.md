@@ -6,5 +6,5 @@ These items are specific to a Jopi project:
 
 ```
 |- _jopiLinkerGen/   < Contains generated source code (don't edit!)
-|- index.ts          < The application entry-point
+|- index.tsx          < The application entry-point
 ```

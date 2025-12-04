@@ -1,5 +1,5 @@
 import {JopiEasyWebSite} from "jopijs";
-import users from "../myUsers.json";
+import users from "./myUsers.json";
 
 // Here we will enable JWT and declare our users.
 //
@@ -9,11 +9,11 @@ export default async function(webSite: JopiEasyWebSite) {
     // - An authentification mechanism allowing Jopi
     //      to identify users and know if they are logged-in.
     //
-    // - An user store, in which we declare our user.
+    // - A user store, in which we declare our user.
     //      Here it's a simple in-memory store, but it can
     //      easily be extended to a more complex one for your needs.
     //
-    // To know: all thing block can be shortened with:
+    // To know: all this can be shortened with:
     //      fastConfigure_jwtTokenAuth("MY_SUPER_SECRET_KEY", users)
     //
     webSite.configure_jwtTokenAuth()
@@ -22,16 +22,16 @@ export default async function(webSite: JopiEasyWebSite) {
 
         // Second step: create the user store.
         .step_setUserStore()
-        // Here we use a simple store which will receive
-        // the use login and password, without hash.
-        .use_simpleLoginPassword()
+            // Here we use a simple store which will receive
+            // the use login and password, without hash.
+            .use_simpleLoginPassword()
 
-        // Now we add our users.
-        .addMany(users)
+                // Now we add our users.
+                .addMany(users)
 
-        // Call of type DONE_??? allows us
-        // to know that we have reached the last step.
-        .DONE_use_simpleLoginPassword()
-        .DONE_setUserStore()
+                // Call of type DONE_??? allows us
+                // to know that we have reached the last step.
+                .DONE_use_simpleLoginPassword()
+            .DONE_setUserStore()
         .DONE_configure_jwtTokenAuth()
 }

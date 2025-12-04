@@ -1,6 +1,6 @@
 # About
 
-Each folder in the `@routes` directory match an url segment.  
+Each folder in the `@routes` directory match a URL segment.  
 Example: the folder '@routes/my/url/route' match `http://localhost:3000/my/url/route`.
 
 Here whe have four subfolder:
@@ -9,8 +9,8 @@ Here whe have four subfolder:
 |- @routes/
    |- aboutRoutes/
       |- myAPI              < Listen "http://localhost:3000/aboutRoutes/myAPI"
-      |- product            < Listen "http://localhost:3000/aboutRoutes/product"    
       |- reactPage          < Listen "http://localhost:3000/aboutRoutes/reactPage"
+      |- product            < Listen "http://localhost:3000/aboutRoutes/product/myProduct"    
       |- catchAll           < Listen "http://localhost:3000/aboutRoutes/catchAll"
 ```
 

@@ -4,7 +4,7 @@ import {useRouterNavigate, useRouterSearchParams, Composite, useUserInfos, useLo
 import * as jk_translate from "jopi-toolkit/jk_translate";
 import logo from "./logo.png";
 
-const trInvalidIdentifier = jk_translate.translate("page.login.invalidIdentifierOrPassword", {default: "Invalid identifier2"});
+const trInvalidIdentifier = jk_translate.translate("page.login.invalidIdentifierOrPassword", {default: "Invalid identifier"});
 const trCheckMailOrPassword = jk_translate.translate("page.login.checkMailOrPassword", {default: "Check you e-mail and/or password"});
 const trRememberMe = jk_translate.translate("page.login.rememberMe", {default: "Remember me"});
 const trForgotPassword = jk_translate.translate("page.login.forgotPassword", {default: "Forgot password?"});

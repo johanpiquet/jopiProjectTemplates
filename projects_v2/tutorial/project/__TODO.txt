@@ -1,0 +1,28 @@
+--- Plan de progression ---
+
+[x] Installation, aperçu et 1ère route
+[x] Dev Mode : Server et UI
+[x] Aperçu de système de modules
+[x] Fonctionnement du routeur
+[x] React Server Side
+[x] Imported des CSS
+[x] Imported des images
+[x] Shared Components
+[x] Composites
+[e] Créer un événement
+
+9- Les utilisateurs et les rôles
+    - Mettre en place l'authentification
+        - Indiquer que Jopi utilise des rôles pour sécuriser l'accès
+        - Comment activer l'authentification JWT
+        - Montrer la page de login (le visuel)
+        - Montrer le onPOST gérant le retour
+    - Comment limiter les accès
+        - A l'ensemble de la route
+        - A la page uniquement
+        - A GET / POST / ...
+    - Comment ne pas faire le render React
+    - API : comment obtenir l'utilisateur et ses rôles
+    - Menu : comment le personnaliser selon les rôles
+    - React: comment afficher l'utilisateur
+    - Comment déconnecter l'utilisateur
