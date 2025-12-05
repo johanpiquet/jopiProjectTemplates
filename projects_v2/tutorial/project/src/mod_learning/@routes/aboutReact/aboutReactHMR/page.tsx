@@ -1,10 +1,8 @@
 import {useEffect, useRef, useState} from "react";
 import imgLogo from "./logo.png";
 
-// Note: currently a bug affects React HMR and this sample doesn't work anymore.
-
 export default function() {
-    const myText = "I can change this text while the state remain.";
+    const myText = "Change me!";
 
     return <BouncingImage title={myText} />
 }
@@ -78,7 +76,7 @@ function BouncingImage({title}: {title: string}) {
                     Jopi supports hot module replacement (HMR) for React components.<br/>
                     The browser refresh, while your React component state is restored.
                 </p>
-                <p className="text-xs text-red-500 mt-2">{title}</p>
+                <p className="text-red-500 mt-2 text-3xl">{title}</p>
             </div>
         </div>
     );
