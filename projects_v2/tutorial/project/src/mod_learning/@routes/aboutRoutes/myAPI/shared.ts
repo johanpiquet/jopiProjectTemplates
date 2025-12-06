@@ -1,1 +1,0 @@
-export const myValues: Record<string, string> = {};
