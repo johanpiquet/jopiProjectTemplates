@@ -2,6 +2,6 @@
   "projects": [
     {"title": "A minimal template", "template": "minimal"},
     {"title": "Tutorial", "template": "tutorial"},
-    {"title": "Stress test 1000 pages", "template": "stressTest"}
+    {"title": "Benchmark project", "template": "benchmark"}
   ]
 }
